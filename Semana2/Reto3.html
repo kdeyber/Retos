@@ -14,22 +14,38 @@
             <form>
                 <p>First Name</p>
                 <label for="nombre"></label>
-                <input class="selec" type="text" id="nombre" placeholder="John">
+                <input 
+                    class="selec" 
+                    type="text" 
+                    id="nombre" 
+                    placeholder="John"
+                    >
                 <br>
                 <br>
                 <p>Last Name</p>
                 <label for="apellido"></label>
-                <input class="selec"type="text" id="apellido" placeholder="Doe">
+                <input 
+                    class="selec"
+                    type="text" 
+                    id="apellido" 
+                    placeholder="Doe"
+                    >
                 <br>
                 <br>
                 <p>Email</p>
                 <label for="correo"></label>
-                <input class="selec"type="email" id="correo" placeholder="you@domain.com">
+                <input 
+                    class="selec"
+                    type="email" 
+                    id="correo" 
+                    placeholder="you@domain.com" 
+                    pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                    >
                 <br>
                 <br>
                 <p>Message</p>
                 <label></label>
-                <textarea class="selec"cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+                <textarea class="selec"cols="30" rows="10" placeholder="Enter your message here..." minlength="20" maxlength="140"></textarea>
                 <br>
                 <br>
                 <div class="select">
