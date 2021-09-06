@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.register {
+    width: 350px;
+    background-color: rgb(231, 227, 227);
+    text-align: ;
+    margin: auto;
+    padding: 25px;
+    margin-top: 100px;
+    font-family: calibri;
+}
+.content {
+font-size: 25px;
+width: 315px;
+}
+.select {
+   width: 15px;
+}
+.selec {
+    font-size: 15px;
+    width: 300px;
+}
+.button {
+    width: 100px;
+    padding: 9px;
+    background-color: rgb(101, 101, 185)}

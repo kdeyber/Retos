@@ -4,58 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Reto2.css">
 </head>
 <body>
-    <header>
-        <h1>Sing Up</h1>
-    </header>
     <main>
-        <section>
+        <section class="register">
+                <h1>Sing Up</h1>
+                <br>
             <form>
-                <label for="nombre">First name</label>
-                <input type="text" id="nombre">
+                <p>First Name</p>
+                <label for="nombre"></label>
+                <input class="content" type="text" id="nombre">
                 <br>
                 <br>
-                <label for="edad">Age</label>
-                <input 
+                <p>Age</p>
+                <label for="edad"></label>
+                <input class="content"
                     type="text" 
                     id="edad"
                     >
                     <br>
                     <br>
-                <label for="ingreso">Income</label>
-                <input 
+                    <p>Income</p>
+                <label for="ingreso"></label>
+                <input class="content"
                     type="text" 
                     id="ingreso"
                     >
                     <br>
                     <br>
-                <label> More info</label>
-                <textarea cols="30" rows="3"></textarea>
+                    <p>More Info</p>
+                <textarea class="content"></textarea>
                 <br>
                 <br>
                 <label>Gender</label>
                 <br>
 
-                <input 
+                <input class="select" 
                     type="radio" 
                     name="genero" 
                     value="M"
                     >Male 
-                <input 
+                <input class="select"
                     type="radio" 
                     name="genero" 
                     value="F"
                     >Female 
-                <input 
+                <input class="select"
                     type="radio" 
                     name="genero" 
                     value="T"
                     >Trans
                     <br>
                     <br>
-                    <label>Plan</label>
-                    <select>
+                    <p>Plan</p>
+                    <select class="selec">
                         <option selected disabled>Select Plan</option>
                         <option value="a">a</option>
                         <option value="b">b</option>
@@ -63,10 +66,10 @@
                     </select>
                   <br>
                   <br>
-                  <input type="checkbox" name="suscripcion">Subscribe to Newsletter
+                  <input type="checkbox" name="suscripcion"> Subscribe to Newsletter
                   <br>
                   <br>
-                  <button>Update</button>
+                  <button class="button">Update</button>
 
             </form>
         </section>
