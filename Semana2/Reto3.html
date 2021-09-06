@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Reto3.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Form</h1>
-    </header>
+
     <main>
-        <section>
+        <section class="register">
+            <h1>Contact Form</h1>
             <form>
-                <label for="nombre">First Name</label>
-                <input type="text" id="nombre" placeholder="John">
+                <p>First Name</p>
+                <label for="nombre"></label>
+                <input class="selec" type="text" id="nombre" placeholder="John">
                 <br>
                 <br>
-                <label for="apellido">Last Name</label>
-                <input type="text" id="apellido" placeholder="Doe">
+                <p>Last Name</p>
+                <label for="apellido"></label>
+                <input class="selec"type="text" id="apellido" placeholder="Doe">
                 <br>
                 <br>
-                <label for="correo">Email</label>
-                <input type="email" id="correo" placeholder="you@domain.com">
+                <p>Email</p>
+                <label for="correo"></label>
+                <input class="selec"type="email" id="correo" placeholder="you@domain.com">
                 <br>
                 <br>
-                <label>Message</label>
-                <textarea cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+                <p>Message</p>
+                <label></label>
+                <textarea class="selec"cols="30" rows="10" placeholder="Enter your message here..."></textarea>
                 <br>
                 <br>
-                <button>Submit</button>
+                <div class="select">
+                <button class="button">Submit</button>
+            </div>
             </form>
         </section>
     </main>
