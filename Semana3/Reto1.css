@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+header {
+    background-color: black;
+    color: white; 
+    text-align: center;
+    padding: 20px 15px;
+}
+.menu .line {
+    width: 35px;
+    height: 5px;
+    background: white;
+    margin-bottom: 5px;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    background-color: gray;
+    color: white;
+    border: gray;
+    margin: auto;
+    width: 200px;
+    padding: 9px;
+}
+.features {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-around;   
+}
+.item *{
+    margin: 15px 0;
+    width: 370px;
+}
+.item {
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 3px gray;
+    font-size: 27px;
+    margin: 8px;
+}
+.item img {
+    width: 250px;
+}
