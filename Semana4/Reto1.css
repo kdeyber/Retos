@@ -10,7 +10,7 @@ body {
 .container {
     padding: 50px;
     min-width: 700px;
-    max-width: 120010;
+    max-width: 1200px;
     min-height: 700px;
     margin: 0 auto;
     display: grid;
