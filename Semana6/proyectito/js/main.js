@@ -50,11 +50,38 @@ let listaPlatillos = [
     },
 ];
 
-let content = document.getElementById("contenido")
+let divcontenido = document.getElementById("contenido");
 
-listaPlatillos.forEach(function(platillos){
+function dibujartarjetas(){
+    let htmltarjetas = "";
+    listaPlatillos.forEach(function(plato){
+        htmltarjetas = htmltarjetas + `<div class="tarjeta">
+                  <div class="imagen">
+                    <img src="${plato.imagen}">
+                  </div>
+                  <div class="texto">
+                    <h4>${plato.nombre}</h4>
+                    <p>${plato.descripcion}</p>
+                    <div class="precio">
+                      <span>S/ ${plato.precio}</span>
+                      <button class="btn-agregar"> data-idplato="${plato.id}">
+                        Agregar
+                      </button>
+                    </div>
+                  </div>
+                </div>`;
 
+    });
 
+        divcontenido.innerHTML = htmltarjetas;
+}
 
-    
-})
+dibujartarjetas();
+
+let botonesAgregar = document.querySelectorAll(".btn-agregar")
+
+botonesAgregar.forEach(function(boton){
+    boton.addEventListener("click", function (){
+
+    });
+});
