@@ -64,7 +64,7 @@ function dibujartarjetas(){
                     <p>${plato.descripcion}</p>
                     <div class="precio">
                       <span>S/ ${plato.precio}</span>
-                      <button class="btn-agregar"> data-idplato="${plato.id}">
+                      <button class="btn-agregar" data-idplato="${plato.id}">
                         Agregar
                       </button>
                     </div>
@@ -80,8 +80,24 @@ dibujartarjetas();
 
 let botonesAgregar = document.querySelectorAll(".btn-agregar")
 
-botonesAgregar.forEach(function(boton){
-    boton.addEventListener("click", function (){
+botonesAgregar.forEach(function (boton) {
+    boton.addEventListener("click", function () {
+        let idObtenido = boton.getAttribute("data-idplato")
+       
+        console.log(idObtenido);
+        
+        let platoEncontrado = buscarPlatoPorId(idObtenido);
+      
+        console.table(platoEncontrado)
 
+        carrito.push(platoEncontrado)
+        console.log(carrito)
     });
 });
+
+function buscarPlatoPorId (id) {
+    let platilloEncontrado = listaPlatillos.find(function(plato){
+        return plato.id == id
+    });
+    return platilloEncontrado
+}
