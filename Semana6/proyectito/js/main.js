@@ -100,4 +100,4 @@ function buscarPlatoPorId (id) {
         return plato.id == id
     });
     return platilloEncontrado
-}
+} 
